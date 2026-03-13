@@ -21,6 +21,7 @@
 #    - has_bike: a boolean representing if the user has a bicycle
 #    - has_car: a boolean representing if the user has a car
 #    - has_ride_share_app: a boolean representing if the user has a ride-share app
+
 #
 # 2. USE CONDITIONAL LOGIC:
 #    - Use if, elif, and else statements to evaluate distance categories
@@ -75,3 +76,18 @@
 # ===========================================================================
 # YOUR CODE BELOW:
 # ===========================================================================
+
+distance_mi = 4
+is_raining = False
+has_bike = True
+has_car = False
+has_ride_share_app = False
+
+if not distance_mi:
+	print(False)
+elif distance_mi <= 1:
+	print(not is_raining)
+elif distance_mi <= 6:
+	print(has_bike and not is_raining)
+else:
+	print(has_car or has_ride_share_app)
